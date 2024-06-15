@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inventory Management System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Inventory Management System</h1>
+
+  <h2>Add New Item</h2>
+  <form id="addForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br><br>
+    <label for="description">Description:</label>
+    <textarea id="description" name="description" required></textarea><br><br>
+    <label for="quantity">Quantity:</label>
+    <input type="number" id="quantity" name="quantity" required><br><br>
+    <label for="price">Price:</label>
+    <input type="number" id="price" name="price" step="0.01" required><br><br>
+    <input type="submit" value="Add Item">
+  </form>
+
+  <h2>Update Item</h2>
+  <form id="updateForm">
+    <label for="id">Item ID:</label>
+    <input type="number" id="id" name="id" required><br><br>
+    <label for="name">Name:</label>
+    <input type="text" id="updateName" name="name" required><br><br>
+    <label for="description">Description:</label>
+    <textarea id="updateDescription" name="description" required></textarea><br><br>
+    <label for="quantity">Quantity:</label>
+    <input type="number" id="updateQuantity" name="quantity" required><br><br>
+    <label for="price">Price:</label>
+    <input type="number" id="updatePrice" name="price" step="0.01" required><br><br>
+    <input type="submit" value="Update Item">
+  </form>
+
+  <h2>Delete Item</h2>
+  <form id="deleteForm">
+    <label for="deleteId">Item ID:</label>
+    <input type="number" id="deleteId" name="id" required><br><br>
+    <input type="submit" value="Delete Item">
+  </form>
+
+  <h2>View Inventory</h2>
+  <div id="inventory"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
